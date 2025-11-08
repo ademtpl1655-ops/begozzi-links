@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Begozzi • İletişim ve Sosyal Bağlantılar</title>
+  <meta name="description" content="Begozzi – WhatsApp, Telegram ve web sitesi bağlantıları." />
+  <meta property="og:title" content="Begozzi • İletişim" />
+  <meta property="og:description" content="WhatsApp, Telegram ve web sitemize buradan ulaşın." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0d13" />
+  <style>
+    :root{
+      --bg:#0b0d13;
+      --card:#121520;
+      --accent:#d4af37;
+      --text:#e8eaef;
+      --muted:#a6adbb;
+      --border:rgba(212,175,55,0.22);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+      background: radial-gradient(1000px 600px at 20% -10%, rgba(212,175,55,0.08), transparent 60%),
+                  radial-gradient(800px 500px at 110% 10%, rgba(212,175,55,0.06), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .wrap{width:100%; max-width:560px;}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)) , var(--card);
+      border:1px solid var(--border);
+      border-radius:24px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+    .brand{display:flex; align-items:center; gap:14px; margin-bottom:8px;}
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      background:linear-gradient(135deg, rgba(212,175,55,0.25), rgba(212,175,55,0.05));
+      border:1px solid var(--border);
+      display:grid; place-items:center; font-weight:800; color:var(--accent);
+      letter-spacing:0.5px;
+    }
+    h1{font-size:22px; margin:0}
+    p.subtitle{margin:6px 0 18px; color:var(--muted);}
+    .btn{
+      display:flex; align-items:center; gap:10px;
+      width:100%; padding:14px 16px; margin:10px 0;
+      border-radius:14px; border:1px solid var(--border);
+      background:rgba(255,255,255,0.02);
+      color:var(--text); text-decoration:none; font-weight:600;
+      transition: transform .06s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background:rgba(212,175,55,0.06);
+      border-color:rgba(212,175,55,0.35);
+    }
+    .btn:active{ transform: translateY(0); }
+    .row{display:grid; grid-template-columns:1fr; gap:10px}
+    .note{margin-top:14px; font-size:13px; color:var(--muted)}
+    .qr-tip{
+      margin-top:20px;
+      padding:12px 14px;
+      border:1px dashed var(--border);
+      border-radius:12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media(min-width:560px){
+      .row{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="brand">
+        <div class="logo">BG</div>
+        <div>
+          <h1>Begozzi</h1>
+          <p class="subtitle">Takım elbise ve smokin — bize buradan ulaşın</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <a class="btn" href="https://wa.me/905461290566?text=Merhaba%20Begozzi%2C%20karttaki%20QR%27i%20okuttum." target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+
+        <a class="btn" href="https://t.me/begozzimensuit" target="_blank" rel="noopener">
+          Telegram
+        </a>
+
+        <a class="btn" href="https://begozzi.com/" target="_blank" rel="noopener">
+          Web Sitemiz
+        </a>
+      </div>
+
+      <p class="note">© Begozzi • Tüm hakları saklıdır</p>
+    </section>
+  </main>
+</body>
+</html>
